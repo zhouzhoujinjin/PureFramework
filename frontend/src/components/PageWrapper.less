@@ -1,0 +1,33 @@
+.page-wrapper {
+  margin: 0px 20px 10px;
+  .page-wrapper-header {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > * + * {
+      margin-left: 15px;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    .major-action {
+      flex: 1;
+    }
+  }
+
+  > .ant-card {
+    border-color: rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    .ant-card-body {
+      > .ant-table-wrapper {
+        margin: -24px;
+      }
+
+      > .ant-pagination {
+        margin-right: 16px;
+      }
+    }
+  }
+}
